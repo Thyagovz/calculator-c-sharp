@@ -4,12 +4,22 @@ class Program
 {
     static void Main(string[] args)
     {
-        // Addition();
-        // Subtraction();
-        // Division();
-        // Multiply();
+        Menu();
     }
+    static void Menu()
+    {
+        Console.Clear();
 
+        Console.WriteLine("O que deseja fazer?");
+        Console.WriteLine("1 = Soma");
+        Console.WriteLine("2 = Subtração");
+        Console.WriteLine("3 = Multiplicação");
+        Console.WriteLine("4 = Divisão");
+
+        Console.WriteLine("---------------");
+        Console.WriteLine("Selecione uma opção: ");
+        short res = short.Parse(Console.ReadLine());
+    }
     static void Addition()
     {
         Console.Clear();
