@@ -6,7 +6,8 @@ class Program
     {
         // Addition();
         // Subtraction();
-        Division();
+        // Division();
+        // Multiply();
     }
 
     static void Addition()
@@ -57,6 +58,23 @@ class Program
         Console.WriteLine("");
 
         float result = v1 / v2;
+        Console.WriteLine($"O resultado da divisão é {result}");
+        Console.ReadKey();
+    }
+
+    static void Multiply()
+    {
+        Console.Clear();
+
+        Console.WriteLine("Primeiro valor: ");
+        float v1 = float.Parse(Console.ReadLine());
+
+        Console.WriteLine("Segundo valor: ");
+        float v2 = float.Parse(Console.ReadLine());
+
+        Console.WriteLine("");
+
+        float result = v1 * v2;
         Console.WriteLine($"O resultado da divisão é {result}");
         Console.ReadKey();
     }
